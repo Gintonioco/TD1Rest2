@@ -37,4 +37,11 @@ public class Professeur
 				inverseJoinColumns = @JoinColumn(name = "idEtu"))
 	@JsonIgnore
 	List<Etudiant> listeEtudiants;
+	
+	@ManyToMany
+	@JoinTable(name = "Professeur_Ecole",
+				joinColumns = @JoinColumn(name = "idProf"),
+				inverseJoinColumns = @JoinColumn(name = "idEcole"))
+	@JsonIgnore
+	List<Ecole> listeEcoles;
 }
