@@ -26,4 +26,17 @@ public class Etudiant
 	private String email;
 	private String telephone;
 	private int anneeEtude;
+	
+	public Etudiant(@NonNull String nom, String prenom, String email, String telephone, int anneeEtude)
+	{
+		super();
+		this.nom = nom;
+		this.prenom = prenom;
+		this.email = email;
+		this.telephone = telephone;
+		this.anneeEtude = anneeEtude;
+	}
+	
+	
+	
 }
