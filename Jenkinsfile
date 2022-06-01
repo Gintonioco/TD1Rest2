@@ -7,18 +7,18 @@ pipeline {
   
   stages{
     stage('Clean') {
-      step{
+      steps{
         bat"mvn clean"
       }
     }
     stage('Test'){
-      step{
+      steps{
         bat "mvn test"
       
       }
     }
     stage('Install'){
-      step{
+      steps{
         bat "mvn install"
       
       }
