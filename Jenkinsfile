@@ -24,17 +24,18 @@ pipeline {
       }
     }
   }
-  post {
-    always
-    {
-      echo "test toujouurs"
-    }
-    success
-    {
-      echo "SUCCESS"
-    }
-    failure
-    {
-      echo "FAILURE"
-    }
-    unstable
+}
+  //post {
+    //always
+//    {
+ //     echo "test toujouurs"
+ //   }
+ //   success
+ //   {
+ //     echo "SUCCESS"
+ //   }
+ //   failure
+ //   {
+ //     echo "FAILURE"
+ //   }
+ //   unstable
